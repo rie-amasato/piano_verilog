@@ -7,7 +7,7 @@ FPGAで簡単なピアノの製作
 
 
 FPGAボード：DE0-CV  
-書き込みソフト:Quartus Prime 17.0 Lite Edition  
+書き込みソフト:Quartus Prime 17.0.0.595 Lite Edition  
 を使用  
 
 (c) Yumi-Amahane
