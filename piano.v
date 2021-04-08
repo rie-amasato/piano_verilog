@@ -1,6 +1,6 @@
 module piano(
   input CLK,//M9
-  input SW0,SW1,SW2,SW3,
+  input SW0,SW1,SW2,SW3,RST,
   output LED0,LED1,LED2,LED3,LED4,
   output Speaker
   );
@@ -14,11 +14,18 @@ module piano(
     if (cl5==0)begin//20 kHzごとにする
 		FRM<=(FRM!=20000)?FRM+1:0;
 	 
-	   if (SW0==0)SpOUT<=((FRM%152)<76)?1:0;
-		else if (SW1==0)SpOUT<=((FRM%136)<68)?1:0;
-		else if (SW2==0)SpOUT<=((FRM%121)<60)?1:0;
-		else if (SW3==0)SpOUT<=((FRM%115)<57)?1:0;
-	   
+	   if (RST==1)begin
+    	  if (SW0==0)SpOUT<=((FRM%152)<76)?1:0;
+	     else if (SW1==0)SpOUT<=((FRM%136)<68)?1:0;
+		  else if (SW2==0)SpOUT<=((FRM%121)<60)?1:0;
+		  else if (SW3==0)SpOUT<=((FRM%115)<57)?1:0;
+	   end
+		else begin
+		  if (SW0==0)SpOUT<=((FRM%121)<60)?1:0;
+	     else if (SW1==0)SpOUT<=((FRM%115)<57)?1:0;
+		  else if (SW2==0)SpOUT<=((FRM%102)<51)?1:0;
+		  else if (SW3==0)SpOUT<=((FRM%91)<45)?1:0;
+		end
 	 end
   end
   

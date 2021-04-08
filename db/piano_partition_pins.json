@@ -44,6 +44,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
 					"name" : "CLK",
 					"strict" : false
 				}

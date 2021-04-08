@@ -1,5 +1,5 @@
 Analysis & Synthesis report for piano
-Tue Apr 06 15:32:39 2021
+Thu Apr 08 11:08:50 2021
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -14,13 +14,15 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
- 10. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
- 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
- 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  9. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod2
+ 10. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
+ 11. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod4
+ 12. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod5
+ 13. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0
+ 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -47,14 +49,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Apr 06 15:32:39 2021       ;
+; Analysis & Synthesis Status     ; Successful - Thu Apr 08 11:08:50 2021       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; piano                                       ;
 ; Top-level Entity Name           ; piano                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 35                                          ;
-; Total pins                      ; 11                                          ;
+; Total pins                      ; 12                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -167,27 +169,27 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
-; piano.v                          ; yes             ; User Verilog HDL File        ; C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v                    ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_divide.tdf               ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/abs_divider.inc              ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/sign_div_unsign.inc          ;         ;
-; aglobal170.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc               ;         ;
-; db/lpm_divide_s3m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/lpm_divide_s3m.tdf      ;         ;
-; db/sign_div_unsign_vlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/sign_div_unsign_vlh.tdf ;         ;
-; db/alt_u_div_40f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/alt_u_div_40f.tdf       ;         ;
-; db/lpm_divide_r3m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/lpm_divide_r3m.tdf      ;         ;
-; db/sign_div_unsign_ulh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/sign_div_unsign_ulh.tdf ;         ;
-; db/alt_u_div_20f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/alt_u_div_20f.tdf       ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
+; piano.v                          ; yes             ; User Verilog HDL File        ; C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v                        ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/lpm_divide.tdf      ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/abs_divider.inc     ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/sign_div_unsign.inc ;         ;
+; aglobal170.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/17.0/quartus/libraries/megafunctions/aglobal170.inc      ;         ;
+; db/lpm_divide_r3m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/Desktop/piano_verilog/db/lpm_divide_r3m.tdf          ;         ;
+; db/sign_div_unsign_ulh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/Desktop/piano_verilog/db/sign_div_unsign_ulh.tdf     ;         ;
+; db/alt_u_div_20f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/Desktop/piano_verilog/db/alt_u_div_20f.tdf           ;         ;
+; db/lpm_divide_s3m.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/Desktop/piano_verilog/db/lpm_divide_s3m.tdf          ;         ;
+; db/sign_div_unsign_vlh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/Desktop/piano_verilog/db/sign_div_unsign_vlh.tdf     ;         ;
+; db/alt_u_div_40f.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Yumi Amahane/Desktop/piano_verilog/db/alt_u_div_40f.tdf           ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -195,25 +197,25 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 773       ;
+; Estimate of Logic utilization (ALMs needed) ; 1141      ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 1531      ;
-;     -- 7 input functions                    ; 1         ;
-;     -- 6 input functions                    ; 14        ;
-;     -- 5 input functions                    ; 107       ;
-;     -- 4 input functions                    ; 378       ;
-;     -- <=3 input functions                  ; 1031      ;
+; Combinational ALUT usage for logic          ; 2258      ;
+;     -- 7 input functions                    ; 3         ;
+;     -- 6 input functions                    ; 20        ;
+;     -- 5 input functions                    ; 157       ;
+;     -- 4 input functions                    ; 557       ;
+;     -- <=3 input functions                  ; 1521      ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 35        ;
 ;                                             ;           ;
-; I/O pins                                    ; 11        ;
+; I/O pins                                    ; 12        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 35        ;
-; Total fan-out                               ; 4902      ;
-; Average fan-out                             ; 3.09      ;
+; Total fan-out                               ; 7172      ;
+; Average fan-out                             ; 3.10      ;
 +---------------------------------------------+-----------+
 
 
@@ -222,7 +224,7 @@ agreement for further details.
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Entity Name         ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |piano                                 ; 1531 (67)           ; 35 (35)                   ; 0                 ; 0          ; 11   ; 0            ; |piano                                                                                                 ; piano               ; work         ;
+; |piano                                 ; 2258 (82)           ; 35 (35)                   ; 0                 ; 0          ; 12   ; 0            ; |piano                                                                                                 ; piano               ; work         ;
 ;    |lpm_divide:Mod0|                   ; 385 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
 ;       |lpm_divide_s3m:auto_generated|  ; 385 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod0|lpm_divide_s3m:auto_generated                                                   ; lpm_divide_s3m      ; work         ;
 ;          |sign_div_unsign_vlh:divider| ; 385 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod0|lpm_divide_s3m:auto_generated|sign_div_unsign_vlh:divider                       ; sign_div_unsign_vlh ; work         ;
@@ -235,10 +237,18 @@ agreement for further details.
 ;       |lpm_divide_r3m:auto_generated|  ; 347 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod2|lpm_divide_r3m:auto_generated                                                   ; lpm_divide_r3m      ; work         ;
 ;          |sign_div_unsign_ulh:divider| ; 347 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod2|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider                       ; sign_div_unsign_ulh ; work         ;
 ;             |alt_u_div_20f:divider|    ; 347 (347)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod2|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_20f:divider ; alt_u_div_20f       ; work         ;
-;    |lpm_divide:Mod3|                   ; 347 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod3                                                                                 ; lpm_divide          ; work         ;
-;       |lpm_divide_r3m:auto_generated|  ; 347 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod3|lpm_divide_r3m:auto_generated                                                   ; lpm_divide_r3m      ; work         ;
-;          |sign_div_unsign_ulh:divider| ; 347 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod3|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider                       ; sign_div_unsign_ulh ; work         ;
-;             |alt_u_div_20f:divider|    ; 347 (347)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod3|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_20f:divider ; alt_u_div_20f       ; work         ;
+;    |lpm_divide:Mod3|                   ; 348 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod3                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_r3m:auto_generated|  ; 348 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod3|lpm_divide_r3m:auto_generated                                                   ; lpm_divide_r3m      ; work         ;
+;          |sign_div_unsign_ulh:divider| ; 348 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod3|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider                       ; sign_div_unsign_ulh ; work         ;
+;             |alt_u_div_20f:divider|    ; 348 (348)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod3|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_20f:divider ; alt_u_div_20f       ; work         ;
+;    |lpm_divide:Mod4|                   ; 364 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod4                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_r3m:auto_generated|  ; 364 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod4|lpm_divide_r3m:auto_generated                                                   ; lpm_divide_r3m      ; work         ;
+;          |sign_div_unsign_ulh:divider| ; 364 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod4|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider                       ; sign_div_unsign_ulh ; work         ;
+;             |alt_u_div_20f:divider|    ; 364 (364)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod4|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_20f:divider ; alt_u_div_20f       ; work         ;
+;    |lpm_divide:Mod5|                   ; 347 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod5                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_r3m:auto_generated|  ; 347 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod5|lpm_divide_r3m:auto_generated                                                   ; lpm_divide_r3m      ; work         ;
+;          |sign_div_unsign_ulh:divider| ; 347 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod5|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider                       ; sign_div_unsign_ulh ; work         ;
+;             |alt_u_div_20f:divider|    ; 347 (347)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |piano|lpm_divide:Mod5|lpm_divide_r3m:auto_generated|sign_div_unsign_ulh:divider|alt_u_div_20f:divider ; alt_u_div_20f       ; work         ;
 +----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -256,52 +266,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 26    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 26             ; Untyped                ;
-; LPM_WIDTHD             ; 8              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_s3m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 26             ; Untyped                ;
-; LPM_WIDTHD             ; 8              ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_s3m ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------+
@@ -350,6 +314,98 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod4 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 26             ; Untyped                ;
+; LPM_WIDTHD             ; 7              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_r3m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod5 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 26             ; Untyped                ;
+; LPM_WIDTHD             ; 7              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_r3m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 26             ; Untyped                ;
+; LPM_WIDTHD             ; 8              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_s3m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Mod1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 26             ; Untyped                ;
+; LPM_WIDTHD             ; 8              ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_s3m ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -358,29 +414,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; arriav_ff             ; 35                          ;
 ;     ENA SCLR          ; 26                          ;
 ;     plain             ; 9                           ;
-; arriav_lcell_comb     ; 1531                        ;
-;     arith             ; 787                         ;
-;         0 data inputs ; 112                         ;
-;         1 data inputs ; 222                         ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 228                         ;
-;         4 data inputs ; 210                         ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 725                         ;
+; arriav_lcell_comb     ; 2258                        ;
+;     arith             ; 1156                        ;
+;         0 data inputs ; 170                         ;
+;         1 data inputs ; 318                         ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 329                         ;
+;         4 data inputs ; 318                         ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 1073                        ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 358                         ;
-;         3 data inputs ; 77                          ;
-;         4 data inputs ; 168                         ;
-;         5 data inputs ; 107                         ;
-;         6 data inputs ; 14                          ;
-;     shared            ; 18                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 16                          ;
-; boundary_port         ; 11                          ;
+;         2 data inputs ; 523                         ;
+;         3 data inputs ; 133                         ;
+;         4 data inputs ; 239                         ;
+;         5 data inputs ; 157                         ;
+;         6 data inputs ; 20                          ;
+;     shared            ; 26                          ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 23                          ;
+; boundary_port         ; 12                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 53.80                       ;
-; Average LUT depth     ; 41.16                       ;
+; Max LUT depth         ; 56.50                       ;
+; Average LUT depth     ; 43.36                       ;
 +-----------------------+-----------------------------+
 
 
@@ -389,7 +445,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:17     ;
 +----------------+--------------+
 
 
@@ -399,73 +455,91 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Apr 06 15:31:38 2021
+    Info: Processing started: Thu Apr 08 11:07:52 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off piano -c piano
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file piano.v
-    Info (12023): Found entity 1: piano File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 1
+    Info (12023): Found entity 1: piano File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 1
 Info (12127): Elaborating entity "piano" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at piano.v(13): truncated value with size 32 to match size of target (8) File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 13
-Warning (10230): Verilog HDL assignment warning at piano.v(15): truncated value with size 32 to match size of target (26) File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 15
-Warning (10230): Verilog HDL assignment warning at piano.v(17): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 17
-Warning (10230): Verilog HDL assignment warning at piano.v(18): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 18
-Warning (10230): Verilog HDL assignment warning at piano.v(19): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 19
-Warning (10230): Verilog HDL assignment warning at piano.v(20): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 20
-Warning (10230): Verilog HDL assignment warning at piano.v(25): truncated value with size 2 to match size of target (1) File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 25
-Warning (10230): Verilog HDL assignment warning at piano.v(26): truncated value with size 2 to match size of target (1) File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 26
-Info (278001): Inferred 4 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 17
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 18
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 19
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 20
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 17
-Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 17
-    Info (12134): Parameter "LPM_WIDTHN" = "26"
-    Info (12134): Parameter "LPM_WIDTHD" = "8"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_s3m.tdf
-    Info (12023): Found entity 1: lpm_divide_s3m File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/lpm_divide_s3m.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_vlh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_vlh File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/sign_div_unsign_vlh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_40f.tdf
-    Info (12023): Found entity 1: alt_u_div_40f File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/alt_u_div_40f.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1" File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 18
-Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter: File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 18
-    Info (12134): Parameter "LPM_WIDTHN" = "26"
-    Info (12134): Parameter "LPM_WIDTHD" = "8"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod2" File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 19
-Info (12133): Instantiated megafunction "lpm_divide:Mod2" with the following parameter: File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 19
+Warning (10230): Verilog HDL assignment warning at piano.v(13): truncated value with size 32 to match size of target (8) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 13
+Warning (10230): Verilog HDL assignment warning at piano.v(15): truncated value with size 32 to match size of target (26) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 15
+Warning (10230): Verilog HDL assignment warning at piano.v(18): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 18
+Warning (10230): Verilog HDL assignment warning at piano.v(19): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 19
+Warning (10230): Verilog HDL assignment warning at piano.v(20): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 20
+Warning (10230): Verilog HDL assignment warning at piano.v(21): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 21
+Warning (10230): Verilog HDL assignment warning at piano.v(24): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 24
+Warning (10230): Verilog HDL assignment warning at piano.v(25): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 25
+Warning (10230): Verilog HDL assignment warning at piano.v(26): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 26
+Warning (10230): Verilog HDL assignment warning at piano.v(27): truncated value with size 32 to match size of target (2) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 27
+Warning (10230): Verilog HDL assignment warning at piano.v(32): truncated value with size 2 to match size of target (1) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 32
+Warning (10230): Verilog HDL assignment warning at piano.v(33): truncated value with size 2 to match size of target (1) File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 33
+Info (278001): Inferred 6 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod2" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 24
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod3" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 25
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod4" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 26
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod5" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 27
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod0" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 18
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Mod1" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 19
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod2" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 24
+Info (12133): Instantiated megafunction "lpm_divide:Mod2" with the following parameter: File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 24
     Info (12134): Parameter "LPM_WIDTHN" = "26"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_r3m.tdf
-    Info (12023): Found entity 1: lpm_divide_r3m File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/lpm_divide_r3m.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_r3m File: C:/Users/Yumi Amahane/Desktop/piano_verilog/db/lpm_divide_r3m.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_ulh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_ulh File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/sign_div_unsign_ulh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_ulh File: C:/Users/Yumi Amahane/Desktop/piano_verilog/db/sign_div_unsign_ulh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_20f.tdf
-    Info (12023): Found entity 1: alt_u_div_20f File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/db/alt_u_div_20f.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod3" File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 20
-Info (12133): Instantiated megafunction "lpm_divide:Mod3" with the following parameter: File: C:/Users/Yumi Amahane/UserProgram/FPGA_UserProgram/piano/piano.v Line: 20
+    Info (12023): Found entity 1: alt_u_div_20f File: C:/Users/Yumi Amahane/Desktop/piano_verilog/db/alt_u_div_20f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod3" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 25
+Info (12133): Instantiated megafunction "lpm_divide:Mod3" with the following parameter: File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 25
     Info (12134): Parameter "LPM_WIDTHN" = "26"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod4" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 26
+Info (12133): Instantiated megafunction "lpm_divide:Mod4" with the following parameter: File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 26
+    Info (12134): Parameter "LPM_WIDTHN" = "26"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod5" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 27
+Info (12133): Instantiated megafunction "lpm_divide:Mod5" with the following parameter: File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 27
+    Info (12134): Parameter "LPM_WIDTHN" = "26"
+    Info (12134): Parameter "LPM_WIDTHD" = "7"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod0" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 18
+Info (12133): Instantiated megafunction "lpm_divide:Mod0" with the following parameter: File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 18
+    Info (12134): Parameter "LPM_WIDTHN" = "26"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_s3m.tdf
+    Info (12023): Found entity 1: lpm_divide_s3m File: C:/Users/Yumi Amahane/Desktop/piano_verilog/db/lpm_divide_s3m.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_vlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_vlh File: C:/Users/Yumi Amahane/Desktop/piano_verilog/db/sign_div_unsign_vlh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_40f.tdf
+    Info (12023): Found entity 1: alt_u_div_40f File: C:/Users/Yumi Amahane/Desktop/piano_verilog/db/alt_u_div_40f.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Mod1" File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 19
+Info (12133): Instantiated megafunction "lpm_divide:Mod1" with the following parameter: File: C:/Users/Yumi Amahane/Desktop/piano_verilog/piano.v Line: 19
+    Info (12134): Parameter "LPM_WIDTHN" = "26"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1542 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+Info (21057): Implemented 2270 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 1531 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4838 megabytes
-    Info: Processing ended: Tue Apr 06 15:32:39 2021
-    Info: Elapsed time: 00:01:01
-    Info: Total CPU time (on all processors): 00:01:30
+    Info (21061): Implemented 2258 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Thu Apr 08 11:08:50 2021
+    Info: Elapsed time: 00:00:58
+    Info: Total CPU time (on all processors): 00:01:23
 
 
